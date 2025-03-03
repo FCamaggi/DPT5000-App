@@ -1,0 +1,158 @@
+{
+  "pdfs": [
+    {
+      "id": 1,
+      "title": "Biseries  ",
+      "filename": "Biseries  .pdf",
+      "slug": "biseries-",
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 2,
+      "title": "Hipertrofia Rutina deltoides, triceps, biceps,  Core, ADAPTACION ANATOMICA",
+      "filename": "Hipertrofia Rutina deltoides, triceps, biceps,  Core, ADAPTACION ANATOMICA.pdf",
+      "slug": "hipertrofia-rutina-deltoides-triceps-biceps-core-adaptacion-anatomica",
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 3,
+      "title": "Hipertrofia Rutina espalda, cadena posterior tren inferior,  Core, ADAPTACION ANATOMICA",
+      "filename": "Hipertrofia Rutina espalda, cadena posterior tren inferior,  Core, ADAPTACION ANATOMICA.pdf",
+      "slug": "hipertrofia-rutina-espalda-cadena-posterior-tren-inferior-core-adaptacion-anatomica",
+      "color": "#45B7D1"
+    },
+    {
+      "id": 4,
+      "title": "Hipertrofia Rutina piernas anterior,pectoral, Core, ajuste ADAPTACION ANATOMICA",
+      "filename": "Hipertrofia Rutina piernas anterior,pectoral, Core, ajuste ADAPTACION ANATOMICA.pdf",
+      "slug": "hipertrofia-rutina-piernas-anterior-pectoral-core-ajuste-adaptacion-anatomica",
+      "color": "#96CEB4"
+    },
+    {
+      "id": 5,
+      "title": "Rutina de cadena muscular anterior, cruzada, Core, carga transformacion",
+      "filename": "Rutina de cadena muscular anterior, cruzada, Core, carga transformacion.pdf",
+      "slug": "rutina-de-cadena-muscular-anterior-cruzada-core-carga-transformacion",
+      "color": "#FFEEAD"
+    },
+    {
+      "id": 6,
+      "title": "Rutina de cadena muscular anterior, cruzada, Core, carga",
+      "filename": "Rutina de cadena muscular anterior, cruzada, Core, carga.pdf",
+      "slug": "rutina-de-cadena-muscular-anterior-cruzada-core-carga",
+      "color": "#D4A5A5"
+    },
+    {
+      "id": 7,
+      "title": "Rutina de cadena muscular anterior, cruzada, Core, impacto transformacion",
+      "filename": "Rutina de cadena muscular anterior, cruzada, Core, impacto transformacion.pdf",
+      "slug": "rutina-de-cadena-muscular-anterior-cruzada-core-impacto-transformacion",
+      "color": "#9B786F"
+    },
+    {
+      "id": 8,
+      "title": "Rutina de cadena muscular anterior, cruzada, Core, impacto",
+      "filename": "Rutina de cadena muscular anterior, cruzada, Core, impacto.pdf",
+      "slug": "rutina-de-cadena-muscular-anterior-cruzada-core-impacto",
+      "color": "#A8E6CE"
+    },
+    {
+      "id": 9,
+      "title": "Rutina de cadena muscular anterior, cruzada, Core, recuperacion realización",
+      "filename": "Rutina de cadena muscular anterior, cruzada, Core, recuperacion realización.pdf",
+      "slug": "rutina-de-cadena-muscular-anterior-cruzada-core-recuperacion-realizaci-n",
+      "color": "#3498DB"
+    },
+    {
+      "id": 10,
+      "title": "Rutina de cadena muscular anterior, cruzada, Core, recuperacion",
+      "filename": "Rutina de cadena muscular anterior, cruzada, Core, recuperacion.pdf",
+      "slug": "rutina-de-cadena-muscular-anterior-cruzada-core-recuperacion",
+      "color": "#E74C3C"
+    },
+    {
+      "id": 11,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core,  carga",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core,  carga.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-carga",
+      "color": "#2ECC71"
+    },
+    {
+      "id": 12,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core, ajuste acumulacion",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core, ajuste acumulacion.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-ajuste-acumulacion",
+      "color": "#F1C40F"
+    },
+    {
+      "id": 13,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core, carga transformacion",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core, carga transformacion.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-carga-transformacion",
+      "color": "#9B59B6"
+    },
+    {
+      "id": 14,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core, impacto transformacion",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core, impacto transformacion.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-impacto-transformacion",
+      "color": "#1ABC9C"
+    },
+    {
+      "id": 15,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core, impacto",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core, impacto.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-impacto",
+      "color": "#D35400"
+    },
+    {
+      "id": 16,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core, recuperacion acumulacion",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core, recuperacion acumulacion.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-recuperacion-acumulacion",
+      "color": "#FF6B6B"
+    },
+    {
+      "id": 17,
+      "title": "Rutina de cadena muscular posterior, lateral,cruzada, Core, recuperacion realizacion",
+      "filename": "Rutina de cadena muscular posterior, lateral,cruzada, Core, recuperacion realizacion.pdf",
+      "slug": "rutina-de-cadena-muscular-posterior-lateral-cruzada-core-recuperacion-realizacion",
+      "color": "#4ECDC4"
+    },
+    {
+      "id": 18,
+      "title": "Rutina para potencia, de cadena posterior fuerza excéntrica, reactividad",
+      "filename": "Rutina para potencia, de cadena posterior fuerza excéntrica, reactividad.pdf",
+      "slug": "rutina-para-potencia-de-cadena-posterior-fuerza-exc-ntrica-reactividad",
+      "color": "#45B7D1"
+    },
+    {
+      "id": 19,
+      "title": "SUPERSERIES 1 ",
+      "filename": "SUPERSERIES 1 .pdf",
+      "slug": "superseries-1-",
+      "color": "#96CEB4"
+    },
+    {
+      "id": 20,
+      "title": "circuito mixto pesas",
+      "filename": "circuito mixto pesas.pdf",
+      "slug": "circuito-mixto-pesas",
+      "color": "#FFEEAD"
+    },
+    {
+      "id": 21,
+      "title": "mix de cadenas musculares y prevensión de lesione, impacto transformacion",
+      "filename": "mix de cadenas musculares y prevensión de lesione, impacto transformacion.pdf",
+      "slug": "mix-de-cadenas-musculares-y-prevensi-n-de-lesione-impacto-transformacion",
+      "color": "#D4A5A5"
+    },
+    {
+      "id": 22,
+      "title": "mix de cadenas musculares y prevensión de lesiones ajuste acumulacion",
+      "filename": "mix de cadenas musculares y prevensión de lesiones ajuste acumulacion.pdf",
+      "slug": "mix-de-cadenas-musculares-y-prevensi-n-de-lesiones-ajuste-acumulacion",
+      "color": "#9B786F"
+    }
+  ]
+}

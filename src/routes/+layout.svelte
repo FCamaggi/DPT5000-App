@@ -52,6 +52,17 @@
     gap: 1rem;
     align-items: center;
   }
+
+  /* footer sutil */
+  footer {
+    background-color: var(--surface); /* Usa el color de fondo del nav */
+    color: var(--base-content/80); /* Texto ligeramente transparente */
+    padding: 1rem 0; /* Espaciado vertical */
+    text-align: center; /* Centrar el texto */
+    font-size: 0.875rem; /* Tamaño de texto pequeño */
+    border-top: 1px solid var(--base-300); /* Línea sutil en la parte superior */
+  }
+
 </style>
 
 {#if mounted}
@@ -60,7 +71,7 @@
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold text-primary">DPT5000</h1>
         <div class="nav-buttons">
-          <ThemeToggle /> <!-- Movemos el ThemeToggle aquí -->
+          <ThemeToggle />
           <button
             class="btn btn-primary"
             on:click={toggleCalculator}
@@ -95,4 +106,9 @@
       <Calculator />
     </aside>
   </main>
+
+  <!-- Footer sutil -->
+  <footer class="py-4 bg-surface text-center text-sm text-base-content/80">
+    Hecho con ❤️ por Fabrizio Camaggi
+  </footer>
 {/if}

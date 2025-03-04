@@ -59,7 +59,7 @@
   /* footer sutil */
   footer {
     background-color: var(--surface); /* Usa el color de fondo del nav */
-    color: var(--base-content/80); /* Texto ligeramente transparente */
+    color: rgba(var(--base-content), 0.8); /* Aplica 80% de opacidad */
     padding: 1rem 0; /* Espaciado vertical */
     text-align: center; /* Centrar el texto */
     font-size: 0.875rem; /* Tamaño de texto pequeño */

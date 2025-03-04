@@ -96,7 +96,7 @@
             class="card bg-base-200 shadow-xl hover:shadow-2xl cursor-pointer w-full text-left"
             style="border-left: 4px solid {pdf.color}"
             on:click={() => openPDF(pdf.filename)}
-            on:keydown={(e: KeyboardEvent) => e.key === 'Enter' && openPDF(pdf.filename)}
+            on:keydown={(e) => e.key === 'Enter' && openPDF(pdf.filename)}
             transition:fade
           >
             <div class="card-body">

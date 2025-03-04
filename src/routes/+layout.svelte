@@ -20,17 +20,20 @@
 <style global>
   /* Estilos corregidos para la calculadora */
   .calculator-sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 350px;
-    background: white;
-    box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 40;
-    overflow-y: auto;
-  }
+  /* Cambiar background: white por el color surface del tema */
+  background: var(--surface);
+  color: var(--base-content);
+  /* El resto del código se mantiene igual */
+  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 40;
+  overflow-y: auto;
+}
 
   .calculator-closed {
     transform: translateX(100%);
@@ -92,17 +95,17 @@
       class="calculator-sidebar {calculatorOpen ? 'calculator-open' : 'calculator-closed'}"
       aria-label="Calculadora PR"
     >
-      <div class="flex justify-end p-4 sticky top-0 bg-white z-10">
-        <button
-          class="btn btn-circle btn-ghost"
-          on:click={toggleCalculator}
-          aria-label="Cerrar calculadora"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
+    <div class="flex justify-end p-4 sticky top-0 bg-base-200 z-10"> <!-- Cambiar bg-white por bg-base-200 -->
+      <button
+        class="btn btn-circle btn-ghost"
+        on:click={toggleCalculator}
+        aria-label="Cerrar calculadora"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
       <Calculator />
     </aside>
   </main>

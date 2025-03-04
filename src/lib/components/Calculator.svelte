@@ -21,57 +21,59 @@
 
   $: pr = weight && reps ? Math.round(formulas[selectedFormula](weight, reps) * 100) / 100 : 0;
 </script>
+<div class="bg-base-100 text-base-content">
 
-<div class="p-4 space-y-6" transition:fade>
-  <h2 class="text-2xl font-bold text-primary">Calculadora PR</h2>
-  
-  <div class="form-control">
-    <label class="label" for="weight">
-      <span class="label-text">Peso (kg)</span>
-    </label>
-    <input
-      type="number"
-      id="weight"
-      bind:value={weight}
-      class="input input-bordered w-full"
-      min="0"
-      step="0.5"
-    />
-  </div>
+  <div class="p-4 space-y-6" transition:fade>
+    <h2 class="text-2xl font-bold text-primary">Calculadora PR</h2>
+    
+    <div class="form-control">
+      <label class="label" for="weight">
+        <span class="label-text">Peso (kg)</span>
+      </label>
+      <input
+        type="number"
+        id="weight"
+        bind:value={weight}
+        class="input input-bordered w-full"
+        min="0"
+        step="0.5"
+      />
+    </div>
 
-  <div class="form-control">
-    <label class="label" for="reps">
-      <span class="label-text">Repeticiones</span>
-    </label>
-    <input
-      type="number"
-      id="reps"
-      bind:value={reps}
-      class="input input-bordered w-full"
-      min="0"
-      step="1"
-    />
-  </div>
+    <div class="form-control">
+      <label class="label" for="reps">
+        <span class="label-text">Repeticiones</span>
+      </label>
+      <input
+        type="number"
+        id="reps"
+        bind:value={reps}
+        class="input input-bordered w-full"
+        min="0"
+        step="1"
+      />
+    </div>
 
-  <div class="form-control">
-    <label class="label" for="formula">
-      <span class="label-text">Fórmula</span>
-    </label>
-    <select
-      id="formula"
-      bind:value={selectedFormula}
-      class="select select-bordered w-full"
-    >
-      {#each Object.entries(formulaNames) as [value, name]}
-        <option value={value}>{name}</option>
-      {/each}
-    </select>
-  </div>
+    <div class="form-control">
+      <label class="label" for="formula">
+        <span class="label-text">Fórmula</span>
+      </label>
+      <select
+        id="formula"
+        bind:value={selectedFormula}
+        class="select select-bordered w-full"
+      >
+        {#each Object.entries(formulaNames) as [value, name]}
+          <option value={value}>{name}</option>
+        {/each}
+      </select>
+    </div>
 
-  <div class="card bg-primary text-primary-content">
-    <div class="card-body">
-      <h3 class="card-title">PR Estimado</h3>
-      <p class="text-3xl font-bold">{pr} kg</p>
+    <div class="card bg-primary text-primary-content">
+      <div class="card-body">
+        <h3 class="card-title">PR Estimado</h3>
+        <p class="text-3xl font-bold">{pr} kg</p>
+      </div>
     </div>
   </div>
 </div>

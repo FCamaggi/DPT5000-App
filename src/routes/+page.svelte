@@ -15,6 +15,11 @@
   let pdfs: PDFMetadata[] = [];
   let mounted = false;
   let selectedPdf: string | null = null;
+  let searchTerm = '';
+
+  $: filteredPdfs = pdfs.filter(pdf =>
+    pdf.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   onMount(async () => {
     try {
@@ -46,19 +51,28 @@
 </script>
 
 <style>
-  .pdf-grid {
+  .container-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
     gap: 1rem;
     width: 100%;
     padding: 1rem;
   }
 
   @media (max-width: 640px) {
-    .pdf-grid {
+    .container-grid {
       grid-template-columns: 1fr;
       padding: 0.5rem;
     }
+  }
+
+  .card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    min-height: 120px;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
   }
 
   .card-body {
@@ -74,22 +88,24 @@
       font-size: 1.1rem;
     }
   }
-
-  .card {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
-
-  .card:hover {
-    transform: translateY(-2px);
-  }
 </style>
 
 <div class="min-h-screen bg-base-100 text-base-content">
 
   {#if mounted}
     <div class="w-full px-4 sm:container sm:mx-auto py-4 sm:py-8 mt-12" transition:fade>
-      <div class="pdf-grid">
-        {#each pdfs as pdf}
+      <!-- Barra de búsqueda -->
+      <div class="mb-4 px-1">
+        <input
+          type="text"
+          bind:value={searchTerm}
+          placeholder="Buscar por título..."
+          class="input input-bordered w-full max-w-[350px] bg-base-200"
+        />
+      </div>
+
+      <div class="container-grid">
+        {#each filteredPdfs as pdf}
           <div
             role="button"
             tabindex="0"

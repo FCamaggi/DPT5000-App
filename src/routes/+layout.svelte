@@ -20,20 +20,16 @@
 <style global>
   /* Estilos corregidos para la calculadora */
   .calculator-sidebar {
-  /* Cambiar background: white por el color surface del tema */
-  background: var(--surface);
-  color: var(--base-content);
-  /* El resto del código se mantiene igual */
-  box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 350px;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 40;
-  overflow-y: auto;
-}
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 9999;
+    overflow-y: auto;
+  }
 
   .calculator-closed {
     transform: translateX(100%);
@@ -69,44 +65,48 @@
 </style>
 
 {#if mounted}
-  <main class="min-h-screen bg-background" transition:fade>
-    <nav class="bg-surface p-4 shadow-md">
-      <div class="container mx-auto flex justify-between items-center">
+  <main class="min-h-screen bg-background pt-16" transition:fade>
+    <nav class="bg-surface p-4 shadow-md fixed top-0 left-0 w-full">
+      <div class="container mx-auto">
         <h1 class="text-2xl font-bold text-primary">DPT5000</h1>
-        <div class="nav-buttons">
-          <ThemeToggle />
-          <button
-            class="btn btn-primary"
-            on:click={toggleCalculator}
-            aria-expanded={calculatorOpen}
-            aria-controls="calculator-sidebar"
-          >
-            {calculatorOpen ? 'Cerrar' : 'Calculadora PR'}
-          </button>
-        </div>
       </div>
     </nav>
 
+    <!-- Botones fijos en la esquina inferior izquierda -->
+    <div class="fixed bottom-4 left-4 flex flex-col gap-2 z-[9999]">
+      <ThemeToggle />
+      <button
+        class="btn btn-primary w-32"
+        on:click={toggleCalculator}
+        aria-expanded={calculatorOpen}
+        aria-controls="calculator-sidebar"
+      >
+        {calculatorOpen ? 'Cerrar' : 'Calculadora PR'}
+      </button>
+    </div>
+
     <slot />
 
-    <!-- Calculadora Sidebar corregida -->
+    <!-- Calculadora Sidebar -->
     <aside
       id="calculator-sidebar"
       class="calculator-sidebar {calculatorOpen ? 'calculator-open' : 'calculator-closed'}"
       aria-label="Calculadora PR"
     >
-    <div class="flex justify-end p-4 sticky top-0 bg-base-200 z-10"> <!-- Cambiar bg-white por bg-base-200 -->
-      <button
-        class="btn btn-circle btn-ghost"
-        on:click={toggleCalculator}
-        aria-label="Cerrar calculadora"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-      <Calculator />
+      <div class="h-full bg-base-100 border border-base-300 rounded-bl-2xl">
+        <div class="flex justify-end p-4 sticky top-0 bg-base-100 z-10 border-b border-base-300">
+          <button
+            class="btn btn-circle btn-ghost"
+            on:click={toggleCalculator}
+            aria-label="Cerrar calculadora"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <Calculator />
+      </div>
     </aside>
   </main>
 
